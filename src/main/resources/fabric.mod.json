@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "renderguard",
+  "version": "${version}",
+  "name": "RenderGuard",
+  "description": "Client-side rendering optimizations: distance-based entity and particle culling with a lightweight HUD readout and runtime-tunable settings.",
+  "authors": [
+    "You"
+  ],
+  "contact": {},
+  "license": "CC0-1.0",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.renderguard.client.RenderGuardClient"
+    ]
+  },
+  "mixins": [
+    "renderguard.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "fabric-api": "*",
+    "minecraft": "~1.21.11",
+    "java": ">=21"
+  }
+}
